@@ -4,5 +4,6 @@ public class Memorie{
         int[][] coordinaten = new int[9][9];
         int[][] kaart = new int[9][9];
         Spelbord.ToonSpelbord(coordinaten, kaart);
+
     }
 }
