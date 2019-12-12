@@ -25,6 +25,7 @@ public class Memory{
     //print the board
     public static void displayBoard(boolean[][] upDown, int[][] cards) {
 
+
         System.out.println("     1 2 3 4 ");
         System.out.println("---+---------");
         for (int i = 0; i < 4; i++) {
