@@ -3,7 +3,7 @@ package Game;
 import java.util.Random;
 
 public class Spelbord {
-
+                                                          boolean Gevonden = false;
     public static void ToonSpelbord(int[][] coordinaten, int[][] kaart)
     {
         System.out.println("  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |");
@@ -14,13 +14,13 @@ public class Spelbord {
             for (int j = 0; j < coordinaten[i].length; j++)
             {
                 if (coordinaten[i][j] == 0){
-                    System.out.print(kaart[i][j]);
+                    System.out.print(coordinaten[i][j]);
                     System.out.print(" \t");
                 }
-                else
+                else if (coordinaten[i][j] == kaart[i][j])
                 {
                     System.out.print(" \t");
-                    System.out.print(" * ");
+                    System.out.print(kaart[i][j]);
                 }
             }
             System.out.println();
@@ -28,19 +28,17 @@ public class Spelbord {
         }
         System.out.println();
     }
-    public static int[][] kaart() {
-        int[][] kaart = new int[9][9];
-        Random random = new Random();
-        int randomgetal = random.nextInt();
-        for(int i=0;i< kaart.length;i++)
-            kaart[i] = RandomGenereren();
-        return kaart;
-    }
-    public static int[] RandomGenereren()
+
+    public static void RandomGenereren(int [][] kaart)
     {
-        Random random = new Random();
-        int randomgetal = random.nextInt();
-        return new int[]{randomgetal};
+       Random randomGetal = new Random();
+       for (int i = 0; i < 9;i++)
+       {
+           for (int j = 0; j < 9; j++)
+           {
+               kaart[i][j] = randomGetal.nextInt(9);
+           }
+       }
     }
     public static void main(String[] args) {
 
