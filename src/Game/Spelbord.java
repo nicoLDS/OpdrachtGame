@@ -3,7 +3,7 @@ package Game;
 import java.util.Random;
 
 public class Spelbord {
-                                                          boolean Gevonden = false;
+
     public static void ToonSpelbord(int[][] coordinaten, int[][] kaart)
     {
         System.out.println("  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |");

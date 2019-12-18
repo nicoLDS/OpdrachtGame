@@ -26,9 +26,10 @@ public class Memorie{
             if (kaart[x][y] == kaart[x2][y2])
             {
                     System.out.println("U hebt een combinatie gevonden! ");
-                    coordinaten[x][y] = 0;
-                    coordinaten[x2][y2] = 0;
+                    coordinaten[x][y] = kaart[x][y];
+                    coordinaten[x2][y2] = kaart[x2][y2] ;
                     anoniemePlaatsjes -= 2;
+                    Spelbord.ToonSpelbord(coordinaten, kaart);
             }
             }
         }
