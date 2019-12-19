@@ -8,6 +8,8 @@ public class Spel {
         int[][] coordinaten = new int[3][3];
         int[][] kaart = new int[3][3];
         Scanner keyboard = new Scanner(System.in);
+        //Speeltijd speeltijd = new Speeltijd();
+        //speeltijd.start();
         Spelbord.RandomGenererenLevel1(kaart);
         // SPEL START
         int anoniemePlaatsjes = 9;

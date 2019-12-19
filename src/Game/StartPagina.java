@@ -21,6 +21,8 @@ public class StartPagina {
             System.out.println("UITSTEKEND! ,  KEUZE : " + keuzeLevel);
             System.out.println("WIJ WENSEN U VEEL PLEZIER !!!");
             System.out.println("LATEN WE BEGINNEN");
+        Speeltijd speeltijd = new Speeltijd();
+        speeltijd.start();
             Level.GameStartLevel(keuzeLevel);
     }
 }
