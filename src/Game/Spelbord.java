@@ -9,13 +9,13 @@ public class Spelbord {
         System.out.println("__|____________");
         for (int i = 0; i < coordinaten.length; i++)
         {
-            System.out.println((i+1) + " | ");
+            System.out.print((i+1) + " | ");
             for (int j = 0; j < coordinaten[i].length; j++)
             {
                 if (coordinaten[i][j] == 0)
                 {
-                    System.out.println(coordinaten[i][j]);
-                    System.out.println(" \t");
+                    System.out.print(coordinaten[i][j]);
+                    System.out.print(" \t");
                 }
                 else if (coordinaten[i][j] == kaart[i][j])
                 {
@@ -44,7 +44,7 @@ public class Spelbord {
         System.out.println("__|________________________");
         for (int i = 0; i < coordinaten.length; i++)
         {
-            System.out.println((i+1) + " | ");
+            System.out.print((i+1) + " | ");
             for (int j = 0; j < coordinaten[i].length; j++)
             {
                 if (coordinaten[i][j] == 0){
