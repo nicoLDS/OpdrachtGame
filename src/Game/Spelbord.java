@@ -109,7 +109,4 @@ public class Spelbord {
            }
        }
     }
-    public static void main(String[] args) {
-
-    }
 }
