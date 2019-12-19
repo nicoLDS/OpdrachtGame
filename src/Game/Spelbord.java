@@ -91,6 +91,7 @@ public class Spelbord {
                     System.out.print(kaart[i][j]);
                 }
             }
+
             System.out.println();
 
         }
