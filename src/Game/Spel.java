@@ -33,6 +33,12 @@ public class Spel {
                 anoniemePlaatsjes -= 2;
             }
         }
+        if (anoniemePlaatsjes == 9)
+        {
+           Speeltijd speeltijd = new Speeltijd();
+            speeltijd.einde();
+            System.out.println(speeltijd.berekenSpeeltijd(););
+        }
     }
     public static void MemorySpelLevel2()
     {
