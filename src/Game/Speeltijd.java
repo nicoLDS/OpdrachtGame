@@ -1,13 +1,11 @@
 package Game;
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class Speeltijd {
-    Duration totaleSpeeltijd;
-    LocalDateTime startTijd;
-    LocalDateTime eindTijd;
+    private static Duration totaleSpeeltijd;
+   private static LocalDateTime startTijd;
+   private static LocalDateTime eindTijd;
    public void start(){
        startTijd = LocalDateTime.now();
     }
@@ -15,9 +13,10 @@ public class Speeltijd {
     {
         eindTijd = LocalDateTime.now();
     }
-    public void berekenSpeeltijd()
+    public static int berekenSpeeltijd()
     {
         totaleSpeeltijd = Duration.between(eindTijd, startTijd);
         totaleSpeeltijd.toSeconds();
+        return 0;
     }
 }

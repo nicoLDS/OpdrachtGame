@@ -2,6 +2,8 @@ package Game;
 
 import java.util.Scanner;
 
+import static Game.Speeltijd.berekenSpeeltijd;
+
 public class Spel {
     public static  void MemorySpelLevel1()
     {
@@ -37,7 +39,9 @@ public class Spel {
         {
            Speeltijd speeltijd = new Speeltijd();
             speeltijd.einde();
-            System.out.println(speeltijd.berekenSpeeltijd(););
+            int tijd = speeltijd.berekenSpeeltijd();
+            System.out.println(tijd);
+
         }
     }
     public static void MemorySpelLevel2()
@@ -47,7 +51,7 @@ public class Spel {
         Scanner keyboard = new Scanner(System.in);
         Spelbord.RandomGenererenLevel2(kaart);
         // SPEL START
-        int anoniemePlaatsjes = 81;
+        int anoniemePlaatsjes = 36;
         while (anoniemePlaatsjes > 0)
         {
             System.out.println("Geef het eerste Cooridnaat");
@@ -67,6 +71,13 @@ public class Spel {
                 coordinaten[x2][y2] = kaart[x2][y2];
                 anoniemePlaatsjes -= 2;
             }
+        }
+        if (anoniemePlaatsjes == 36)
+        {
+            Speeltijd speeltijd = new Speeltijd();
+            speeltijd.einde();
+            int tijd = speeltijd.berekenSpeeltijd();
+            System.out.println(tijd);
         }
     }
     public static void MemorySpelLevel3()
@@ -96,6 +107,13 @@ public class Spel {
                 coordinaten[x2][y2] = kaart[x2][y2];
                 anoniemePlaatsjes -= 2;
             }
+        }
+        if (anoniemePlaatsjes == 81)
+        {
+            Speeltijd speeltijd = new Speeltijd();
+            speeltijd.einde();
+            int tijd = speeltijd.berekenSpeeltijd();
+            System.out.println(tijd);
         }
     }
 }

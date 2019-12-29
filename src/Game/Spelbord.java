@@ -64,7 +64,7 @@ public class Spelbord {
     public static  void RandomGenererenLevel2(int[][] kaart)
     {
         Random randomGetal = new Random();
-        for (int i = 0; i < 6;i++)
+        for (int i = 0; i < 6; i++)
         {
             for (int j = 0; j < 6; j++)
             {
