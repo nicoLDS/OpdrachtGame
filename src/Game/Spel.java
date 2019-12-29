@@ -25,13 +25,19 @@ public class Spel {
             int x2 = Integer.valueOf(Cordinaat2.substring(0,1)) -1;
             int y2 = Integer.valueOf(Cordinaat2.substring(1,2)) -1;
             System.out.println(kaart[x2][y2]);
-            if (coordinaten[x][y] == coordinaten[x2][y2])
+            if (kaart[x][y] == kaart[x2][y2])
             {
                 System.out.println("U hebt een combinatie gevonden! ");
                 coordinaten[x][y] = kaart[x][y];
                 coordinaten[x2][y2] = kaart[x2][y2];
                 anoniemePlaatsjes -= 2;
             }
+        }
+        if (anoniemePlaatsjes == 9)
+        {
+           Speeltijd speeltijd = new Speeltijd();
+            speeltijd.einde();
+            System.out.println(speeltijd.berekenSpeeltijd(););
         }
     }
     public static void MemorySpelLevel2()
@@ -54,7 +60,7 @@ public class Spel {
             int x2 = Integer.valueOf(Cordinaat2.substring(0,1)) -1;
             int y2 = Integer.valueOf(Cordinaat2.substring(1,2)) -1;
             System.out.println(kaart[x2][y2]);
-            if (coordinaten[x][y] == coordinaten[x2][y2])
+            if (kaart[x][y] == kaart[x2][y2])
             {
                 System.out.println("U hebt een combinatie gevonden! ");
                 coordinaten[x][y] = kaart[x][y];
@@ -83,7 +89,7 @@ public class Spel {
             int x2 = Integer.valueOf(Cordinaat2.substring(0,1)) -1;
             int y2 = Integer.valueOf(Cordinaat2.substring(1,2)) -1;
             System.out.println(kaart[x2][y2]);
-            if (coordinaten[x][y] == coordinaten[x2][y2])
+            if (kaart[x][y] == kaart[x2][y2])
             {
                 System.out.println("U hebt een combinatie gevonden! ");
                 coordinaten[x][y] = kaart[x][y];
